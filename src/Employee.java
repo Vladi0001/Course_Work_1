@@ -1,14 +1,16 @@
 public class Employee {
-    private static int id;
+
     private String name;
     private int payment;
     private int department;
+    private static int counter = 1;
+    private static int id;
 
     public Employee (String name, int payment, int department, int id) {
         this.name = name;
         this.payment = payment;
         this.department = department;
-        this.id = id;
+        this.id = counter++;
 
     }
 
@@ -48,7 +50,7 @@ public class Employee {
     public String toString() {
         return "Ф.И.О. - " + name +
                 ". Зарплата составляет = " + payment +
-                ". Отдел - " + department;
+                ". Отдел - " + department + ". Его id - " + this.id;
     }
 
         }
