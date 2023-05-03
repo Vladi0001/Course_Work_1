@@ -69,11 +69,9 @@ public class Main {
         String qwe = new String("Привет");
         int asd = qwe.length() / 2;
         System.out.println(asd);
-        for (int i = 0; i < asd; i++) {
 
-        }
-        System.out.println(qwe.substring(0,3));
-        System.out.println(qwe.substring(3,6));
+        System.out.println(qwe.substring(0, qwe.length() / 2));
+        System.out.println(qwe.substring(asd));
 
 
     }
