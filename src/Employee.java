@@ -3,10 +3,10 @@ public class Employee {
     private String name;
     private int payment;
     private int department;
-    private static int counter = 1;
+    private static int counter;
     private static int id;
 
-    public Employee (String name, int payment, int department, int id) {
+    public Employee (String name, int payment, int department) {
         this.name = name;
         this.payment = payment;
         this.department = department;
@@ -40,11 +40,11 @@ public class Employee {
         this.department = department;
     }
 
-    public Employee(String name, int payment, int department) {
+    public Employee(String name, int payment, int department, int id) {
         this.name = name;
         this.payment = payment;
         this.department = department;
-        id++;
+        this.id = counter++;
     }
     @Override
     public String toString() {

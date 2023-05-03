@@ -65,18 +65,21 @@ public class Main {
 
         }
         // Задача из Теоритеческой части
-        String asd = "При-вет";
-        String[] zxc = asd.split("-");
-        for (String qwe : zxc) {
-            System.out.println (qwe);
+
+        String qwe = new String("Привет");
+        int asd = qwe.length() / 2;
+        System.out.println(asd);
+        for (int i = 0; i < asd; i++) {
+
         }
+        System.out.println(qwe.substring(0,3));
+        System.out.println(qwe.substring(3,6));
 
 
     }
 
 
+    }
 
-
-}
 
 
